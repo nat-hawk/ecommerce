@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        @media screen and (max-width:200px) {
+            body{
+                background-color: green;
+            }
+            
+        }
+        @media screen and (min-width:200px) and (max-width:350px){
+            body{
+                background-color: orange;
+            }
+            
+        }
+        @media screen and (min-width:350px) and (max-width:550px){
+            body{
+                background-color: red;
+            }
+            
+        }
+        @media screen and (min-width:550px) and (max-width:850px){
+            body{
+                background-color: blue;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="texxt">
+    <!-- <button id="s" onclick="x()">Save</button> -->
+     <input type="button" value="save" id="s" onclick="x()">
+    <script>
+        
+        function x(){
+            // let i = document.getElementById(s)
+            let a = document.getElementById(texxt)
+            let b=a.value
+            console.log(b)
+            // window.localStorage.setItem("name",b)
+            // let r = window.localStorage.getItem("name",b)
+            // console.log(r)
+            
+
+        }
+        
+    </script>
+</body>
+</html>

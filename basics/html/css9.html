@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            margin-top: 5px;
+            color: white;
+            transition: width;
+            transition-duration: 1s;
+        }
+        div:hover{
+            width: 400px;
+        }
+        .div1{
+            transition-timing-function: linear;
+        }
+        .div2{
+            transition-timing-function: ease;
+        }
+        .div3{
+            transition-timing-function: ease-in;
+        }
+        .div4{
+            transition-timing-function: ease-out;
+        }
+        .div5{
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">Linear</div>
+    <div class="div2">Ease</div>
+    <div class="div3">Ease-in</div>
+    <div class="div4">Ease-out</div>
+    <div class="div5">Ease-in-out</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.form{
+    display: flex;
+    width: 30%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 15px;
+    padding: 0px 0px 20px 0px;
+}
+footer p{
+    font-size: 14px;
+    margin: 0px 0px 8px 0px;
+}
+footer a{
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #088178;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #088178;
+    padding: 5px;
+}
+footer .install .row img{
+    border:2px solid #097ef3;
+    border-radius: 8px;
+}
+#copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#copy-right p{
+    color: #088178;
+    font-size: 15px;
+    font-weight: 600;
+}

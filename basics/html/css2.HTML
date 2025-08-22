@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: black;
+        }
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: pink;
+        }
+        a:active{
+            background-color: aqua;
+        }
+        p::after{
+            content: "NAT ";
+        }
+        p::before{
+            content: "NAT ";
+            color: blue;
+        }
+        p::first-letter{
+            color: green;
+        }
+        p::first-line{
+            color: darkgreen;
+        }
+        p::selection{
+            color: orange;
+        }
+        #li2::marker{
+            content: "😁 ";
+        }
+        #li1::marker{
+            content: "😓 ";
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/">Click1</a>
+    <a href="khbghihg">click</a>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel impedit, ut facere omnis aliquid beatae quod, harum consequatur incidunt sint cupiditate recusandae reiciendis esse amet velit fugiat iusto quasi repellendus.em</p>
+    <ol>
+        <li id="li1">sad</li>
+        <li id="li2">happy</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="/basics/car.jpg" alt="" >
+    <br>
+    <button onclick="x()">
+        zoom in
+    </button>
+    <button onclick="y()">
+        let a = document.getElementById(texxt)
+        let b=a.value
+        console.log(b)
+zoom out    </button>
+    <script>
+        let im=document.querySelector("img")
+        function x(){
+            im.setAttribute("src","/basics/car1.jpeg")
+            im.style.width = "1000px"
+            im.style.height = "500px"
+
+        }
+        function y(){
+            let p=document.createElement('video')
+            p.setAttribute("src","/basics/carvideo.mp4")
+            p.setAttribute("controls")
+            document.body.appendChild(p)
+
+            p.style.width = "400px"
+            p.style.height = "200px"
+
+        }
+    </script>
+</body>
+</html>

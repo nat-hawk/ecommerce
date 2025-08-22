@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            top: 0;
+            border: 2px solid black;
+            width: 100vw;
+            height: 10vh;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* filter: blur(8px); */
+        }
+        ul{
+            display: flex;
+            width: 500px;
+        }
+        li{
+            width: 350px;
+        }
+        
+        ul li a{
+            text-decoration: none;
+            color: rgb(236, 236, 236);
+            
+        }
+        .main{
+            position: sticky;
+            top: 0px;
+        }
+        #car{
+            width: 1350px;
+            height: 756px;
+        }
+        #third li{
+            position:relative;
+            /* border: 2px solid black; */
+            /* padding: 50px 102px; */
+            left: -11px;
+            margin: -42px 22px;
+        }
+        #third1 li{
+            position:relative;
+            /* border: 2px solid black; */
+            /* padding: 50px 102px; */
+            left: -11px;
+            margin: -10px 124px;
+        }
+        ul li img{
+            height: 100px;
+            width: 213px;
+        }
+        .vid{
+            display: none;
+        }
+        .main:hover~.vid{
+            display: block;
+        }
+        .main:hover~.ima{
+            display: none;
+        }
+        a:hover{
+                background-color: white;
+                border: 2px solid white;
+                border-radius: 2px;
+                color: black;
+        }
+        .ima{
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid black;
+            background-size: cover;
+            animation-name: image;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative;
+        }
+        @keyframes image{
+            0%{
+                background-image: url(/basics/carbg2.jpeg);
+            }
+            25%{
+                background-image: url(/basics/carbg3.jpeg);
+            }
+            50%{
+                background-image: url(/basics/carbg4.jpeg);
+            }
+            75%{
+                background-image: url(/basics/carbg5.jpeg);
+            }
+            100%{
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img height="100px" src="./panda-removebg-preview.png" alt="">
+        </div>
+        <div class="search">
+            <ul type="none">
+                <li><input type="text" name="" id="li1"></li>
+                <li><input type="button" value="search"></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul type="none" id="ul1">
+                <li id="l1"><a href="">Home</a></li>
+                <li id="l2"><a href="">Login</a></li>
+                <li id="l3"><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="vid">
+        <!-- <img id="car" src="/basics/car.jpg" alt=""> -->
+         <video autoplay loop id ="car" src="/basics/carvideo.mp4"></video>
+    </div>
+    <div class="ima">
+        <!-- <img src="/basics/carscreen.png" alt=""> -->
+    </div>
+    <div>
+        <h3>Contents</h3>
+        <ul id="third1" type="none" style="">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <br>
+        <ul id="third" type="none" style="">
+
+            <li><img src="/basics/car1.jpeg" alt=""><center>car1</center></li>
+            <li><img src="/basics/car2.jpeg" alt=""><center>car2</center></li>
+            <li><img src="/basics/car3.jpeg" alt=""><center>car3</center></li>
+            <li><img src="/basics/car4.jpeg" alt=""><center>car4</center></li>
+            <li><img src="/basics/car5.jpeg" alt=""><center>car5</center></li>
+        </ul>
+    </div>
+    <pre>
+
+
+
+        
+    </pre>
+    <div>
+        <!-- <h3>Content</h3> -->
+        <ul id="third1" type="none" style="">
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+        <br>
+        <ul id="third" type="none" style="">
+
+            <li><img src="/basics/car5.jpeg" alt=""><center>car6</center></li>
+            <li><img src="/basics/car4.jpeg" alt=""><center>car7</center></li>
+            <li><img src="/basics/car3.jpeg" alt=""><center>car8</center></li>
+            <li><img src="/basics/car2.jpeg" alt=""><center>car9</center></li>
+            <li><img src="/basics/car1.jpeg" alt=""><center>car10</center></li>
+        </ul>
+    </div>
+</body>
+</html>

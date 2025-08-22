@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event propagation</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            
+        }
+        #div1{
+            border:2px solid black;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-color: black;
+        }
+        #div2{
+            /* border:2px solid red; */
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+
+        }
+        #div3{
+            /* border:2px solid yellow; */
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <div id="div2">
+            <div id="div3">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let d1=document.querySelector("#div1")
+        let d2=document.querySelector("#div2")
+        let d3=document.querySelector("#div3")
+        d1.addEventListener("click",()=>{
+            alert("grand")
+        })
+        d2.addEventListener("click",(e)=>{
+            e.stopImmediatePropagation()
+            alert("parent")
+        })
+        d3.addEventListener("click",(e)=>{
+            alert("child")
+            e.stopImmediatePropagation()
+        })
+        d1.addEventListener("mouseover",()=>{
+
+        let a = Math.round(Math.random()*255)
+        let b = Math.round(Math.random()*255)
+        let c = Math.round(Math.random()*255)
+
+        console.log(a);
+        d1.style.backgroundColor=`rgb(${a},${b},${c})`;
+    })
+        d2.addEventListener("mouseover",()=>{
+
+        let a = Math.round(Math.random()*255)
+        let b = Math.round(Math.random()*255)
+        let c = Math.round(Math.random()*255)
+
+        console.log(a);
+        d2.style.backgroundColor=`rgb(${a},${b},${c})`;
+    })
+        d3.addEventListener("mouseover",()=>{
+
+        let a = Math.round(Math.random()*255)
+        let b = Math.round(Math.random()*255)
+        let c = Math.round(Math.random()*255)
+
+        console.log(a);
+        d3.style.backgroundColor=`rgb(${a},${b},${c})`;
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            /* border: 2px solid black; */
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100px;
+            width: 1350px;
+            position: fixed;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .menu ul li a:hover{
+            border: 2px solid lightblue;
+            border-radius: 50px;
+            padding: 10px 10px;
+            color: aqua;
+            background-color: #ffffff00;
+        }
+        .menu ul{
+            display: flex;
+        }
+        .menu ul li{
+            width: 100px;
+        }
+        .logo img{
+            height: 150px;
+        }
+        .vid video,.ima img{
+            width: 1350px;
+            height: 756px;
+        }
+        .vid{
+            display: none;
+        }
+        .main:hover~.vid{
+            display: block;
+        }
+        .main:hover~.ima{
+            display: none;
+        }
+        .cont img{
+            height: 200px;
+            width: 300px;
+        }
+        .cont img:hover{
+            width: 700px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="/basics/panda-removebg-preview.png" alt="">
+        </div>
+        <div>
+            <input placeholder="enter value" type="text">
+            <input type="button" value="Search">
+        </div>
+        <div class="menu">
+            <ul type="none">
+                <li><a href="">Home</a></li>
+                <li><a href="">Logout</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="vid">
+             <video autoplay loop src="/basics/carvideo.mp4"></video>
+    </div>
+    <div class="ima">
+            <img src="/basics/carscreen.png" alt="">
+    </div>
+    <pre>
+
+
+    </pre>
+    <div class="cont">
+        <center>
+            <h3>Cars</h3>
+            
+            <img src="/basics/car1.jpeg" alt="">
+            <img src="/basics/car2.jpeg" alt="">
+            <img src="/basics/car3.jpeg" alt="">
+            <br>
+        </center>
+        <center>
+
+            <img src="/basics/car4.jpeg" alt="">
+            <img src="/basics/car5.jpeg" alt="">
+            <img src="/basics/car.jpg" alt="">
+        </center>
+    </div>
+</body>
+</html>

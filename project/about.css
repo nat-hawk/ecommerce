@@ -1,0 +1,363 @@
+/* about-us.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #007bff;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.our-mission, .our-vision, .our-team, .our-values {
+    padding: 60px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.our-mission .container,
+.our-vision .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-mission .mission-content,
+.our-vision .vision-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.our-mission .mission-image,
+.our-vision .vision-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.our-mission .mission-image img,
+.our-vision .vision-image img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.our-mission h2,
+.our-vision h2,
+.our-team h2,
+.our-values h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.our-mission p,
+.our-vision p,
+.our-team p,
+.our-values p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.our-team .team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.our-team .team-member {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.our-team .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.our-team .team-member h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.our-team .team-member p {
+    font-size: 0.95em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.our-values ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.our-values ul li {
+    padding: 15px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.our-values ul li:last-child {
+    border-bottom: none;
+}
+
+.our-values ul li strong {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer nav ul li {
+    margin-left: 20px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .our-mission .container,
+    .our-vision .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .our-mission .mission-content,
+    .our-mission .mission-image,
+    .our-vision .vision-content,
+    .our-vision .vision-image {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .our-mission .mission-image img,
+    .our-vision .vision-image img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .logo {
+        margin-bottom: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    /* background-color: rgba(255, 255, 255, 0); */
+    /* background: transparent; */
+    /* box-shadow: 0 10px 20px rgb(0, 0, 0); */
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+  }
+  
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .navbar-container .navbar-menu {
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .navbar-container .navbar-menu li a {
+    text-decoration: none;
+    /* color: #fff; */
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+  }
+  
+  .navbar-container .navbar-menu li a:hover,
+  .navbar-container .navbar-menu li a.active {
+    color: #162530;
+    background: rgb(188, 212, 229);
+    border: 2px solid #fff;
+  }
+  
+  .navbar-container #name{
+    font-family: "Tagesschrift", system-ui;
+  
+  }
+  #navbar li a{
+    /* text-decoration: none; */
+    /* color: black; */
+    font-size: 16px;
+    font-weight: normal;
+  
+  }
+  .navbar-toggle {
+    display: none;
+    background: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    /* color: black; */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  

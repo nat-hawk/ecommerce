@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <!-- <center> -->
+        <h1 onMouseOver="red()" onmouseout="green()">Hello</h1>
+        <button onclick="red()">
+            Red
+        </button>
+        <button onclick="blue()">
+            Blue
+        </button>
+        <button onclick="green()">
+            Green
+        </button>
+    <!-- </center> -->
+    <script>
+        function red(){
+            // alert("Hiii")
+            let h1=document.querySelector("")
+            h1.innerText('Hey hii')
+            document.body.style.color="red"
+        }
+        function blue(){
+            // alert("Hiii")
+            document.body.style.color="blue"
+        }
+        function green(){
+            // alert("Hiii")
+            document.body.style.color="green"
+        }
+        // let btn = document.querySelector("button")
+
+        // btn.addEventListener("click",()=>{
+        //     let a =0
+        //     a+=1
+        //     document.writeln(`button clicked ${a}`)
+        // })
+    </script>
+</body>
+</html>

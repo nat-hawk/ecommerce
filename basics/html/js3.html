@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM(Document) Methods</title>
+</head>
+<body>
+    <script>
+        let a= document.createElement('h1')
+        a.innerText='hello'
+        document.body.appendChild(a)
+
+
+        let b=document.createElement('div')
+        let c= document.createElement('h1')
+        c.innerText='morning'
+        b.appendChild(c)
+        document.body.appendChild(b)
+
+        let p=document.createElement('p')
+        let d=document.createElement('div')
+        let h=document.createElement('h2')
+        h.innerText='H2Tag'
+        d.appendChild(h)
+        p.appendChild(d)
+        document.body.appendChild(p)
+
+        let i=document.createElement('img')
+        i.setAttribute("src","/basics/car.jpg")
+        document.body.appendChild(i)
+    </script>
+</body>
+</html>

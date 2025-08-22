@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirt4</title>
+    <link rel="stylesheet" href="sh1.css">
+    <!-- <link rel="stylesheet" href="shop1.css"> -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a id="name" href="index.html" class="navbar-logo">Spookie</a>
+            <ul class="navbar-menu">
+                <li><a href="/project/index.html" target="_blank">Home</a></li>
+                <li><a href="/project/shop.html" class="active">Shop</a></li>
+                <li><a href="/project/blogs.html" target="_blank">Blog</a></li>
+                <li><a href="/project/about.html" target="_blank">About</a></li>
+                <li><a href="/project/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="pro-details" class="section-p1">  
+        <div class="single-pro-image">
+            <img src="/project/cloths/shirt3.webp" alt="" height="50%" width="90%" id="mainimg">
+    
+            <div class="sub-image-group">
+                <div class="sub-image-col">
+                    <img src="/project/product_cloths/shirt4_1.webp" height="80%" alt="" width="100%" class="sub-images">
+                </div>
+                <div class="sub-image-col">
+                    <img src="/project/product_cloths/shirt4_2.webp" height="80%" alt="" width="100%" class="sub-images">
+                </div>
+                <div class="sub-image-col">
+                    <img src="/project/product_cloths/shirt4_3.webp" height="80%" alt="" width="100%" class="sub-images">
+                </div>
+                <div class="sub-image-col">
+                    <img src="/project/product_cloths/shirt4_4.webp" height="80%" alt="" width="100%" class="sub-images">
+                </div>
+            </div>
+        </div>
+        <div class="single-product-detail">
+            <h5>Spookie's Trending collection</h5>
+            <h4>LV Beach Shirt</h4>
+            <h2>$799.00</h2>
+            <div class="options">
+            <select name="" id="">
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select>
+            <input type="number" value="1" height="25px">
+        </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, ad. Fuga voluptatem eveniet quod temporibus culpa assumenda, rerum debitis quasi deleniti nisi, soluta voluptatibus itaque. Dignissimos facilis explicabo qui velit!     
+            </p>
+            <button class="normal">Add to cart</button>
+    
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="col col1">
+            <img class="logo" src="/project/project-logo1.PNG" alt="" height="50px" width="100px">
+            <h4>Contact</h4>
+            <p>
+                <strong>Address</strong> MG Road, Church Street, Banglore-560010.
+            </p>
+            <p>
+                <strong>Phone</strong> (+91) 9353861156 / 8722210990       
+            </p>
+            <p>
+                <strong>hours :</strong> 9:00 AM - 9:00 PM, Sun - Sat
+            </p>
+            <div class="follow">
+                <h4>Follow us on</h4>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <!-- <button>b1</button> -->
+        </div>
+
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Contact Us</a>
+            <!-- <button>b2</button> -->
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <a href="">Sign in</a>
+            <a href="">View cart</a>
+            <a href="">Track my order</a>
+            <a href="">Help</a>
+            <!-- <button>b3</button> -->
+        </div>
+        <div class="col install">
+            <h4>Install</h4>
+            <p>from App store or Google play store</p>
+            <div class="row">
+                <img height="40px" width="110px" src="./cloths/playstore.jpeg" alt="">
+                <img height="40px" width="110px" src="./cloths/appstore.jpeg" alt="">
+            </div>
+            <p>Secured payment gateway</p>
+            <img height="90px" width="210px" src="/cloths/secured.jpeg" alt="">
+            <!-- <button>b4</button> -->
+        </div>        
+    </footer>
+    <hr>
+    <div id="copy-right">
+       <p> 0 2025, tech etc - HTML CSS Ecommerce Template</p>
+    </div>
+
+
+    <script>
+        let mainimg = document.getElementById("mainimg")
+        let subimage = document.getElementsByClassName("sub-images")
+
+        subimage[0].onclick= function(){
+            mainimg.src=subimage[0].src;
+        }
+        subimage[1].onclick=function(){
+            mainimg.src=subimage[1].src;
+        }
+        subimage[2].onclick=function(){
+            mainimg.src=subimage[2].src;
+        }
+        subimage[3].onclick=function(){
+            mainimg.src=subimage[3].src;
+        }
+    </script>
+</body>
+</html>

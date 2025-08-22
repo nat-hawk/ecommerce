@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <section id="header">
+        <a href="" >
+            <!-- <img  height="70px" src="/project/project-logo1.PNG" alt="logo">
+            <svg viewBox="100 100 50 32" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M 150.07 131.439 L 131.925 100 L 122.206 105.606 L 137.112 131.439 L 150.07 131.439 Z M 132.781 131.439 L 120.797 110.692 L 111.078 116.298 L 119.823 131.439 L 132.781 131.439 Z M 109.718 121.401 L 115.509 131.439 L 102.551 131.439 L 100 127.007 L 109.718 121.401 Z" fill="black"></path></svg>
+            <!-- <svg aria-hidden="true" class="swoosh-svg" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path></svg>
+        </a>
+
+        <div id="search">
+            <!-- <input type="text" name="" id="" placeholder="Search">
+            <input type="button" value="search">
+            <h1>Spookie</h1>
+        </div>
+        <div>
+            
+            <ul id="navbar" type="none" >
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="" id="lg-bag"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href=""><i id="close" class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+                <a href=""><i id="bar" class="fas fa-outdent"></i></a>
+                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>  
+        </div>
+    </section> -->
+    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Spookie</a>
+            <input type="text" name="" id="searchbox" placeholder="Search products">
+            <button style="margin-left: -215px; width: 20px;" id="glass" ondblclick="disappear()" onclick="searchy()">🔍
+            </button>
+            <button onclick="appear()" id="search">Search</button>
+            <div class="results" id="results"></div>
+
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html" target="_blank">Shop</a></li>
+                <li><a href="blogs.html" target="_blank">Blog</a></li>
+                <li><a href="/project/about.html" target="_blank">About</a></li>
+                <li><a href="/project/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <video autoplay loop>
+            <source src="/project/shop/hamptons-mlp_dsk.mp4">
+        </video>
+        <div class="overlayText">
+            <section id="topText1">
+                <h1>Big Dhamaka sale</h1>
+                <h2>Grab before it ends</h2>
+                <h3>Sale on all products</h3>
+                <p>India's greatest shopping festival</p>
+                <pre>
+                </pre>
+                <button onclick="window.open('/project/shop.html','_blank')">
+                    <b>Click me</b> 
+                </button>
+            </section>
+            <!-- <h1 id="topText1">Spookie</h1> -->
+           <!-- <h1 id="topText">Explore new collections</h1> -->
+
+         </div>
+        <!-- <section>
+            <h1>Big Dhamaka sale</h1>
+            <h2>Grab before it ends</h2>
+            <h3>Sale on all products</h3>
+            <p>India's greatest shopping festival</p>
+            <pre>
+            </pre>
+            <button>
+                <b>Click me</b> 
+            </button>
+        </section>
+        <section id="btn">
+            <button id="green">
+                abc
+            </button >
+            <button id='orange'>
+                def
+            </button>
+        </section> -->
+    </section>
+    
+    <pre>
+
+
+
+
+
+    </pre>
+
+    <section class="head">
+        <div id="header1">
+            <h2>Our Services</h2>   
+        </div>
+    </section>
+    <section id="feature" class="section-p1">
+        <div class="fa-box">
+            <img id="ship" src="./freeship.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fa-box">
+            <img id="ship" src="./onlineorder.png" alt="">
+            <h6>Online order</h6>
+        </div>
+        <div class="fa-box">
+            <img id="ship" src="./savemoney.jpeg" alt="">
+            <h6>Save money</h6>
+        </div>
+        <div class="fa-box">
+            <img id="ship" src="./happysell.png" alt="">
+            <h6>Happy sell</h6>
+        </div>
+        <div class="fa-box">
+            <img id="ship" src="./SALE.jpeg" alt="">
+            <h6>Sale</h6>
+        </div>
+        
+    </section>
+    <!-- <section class="section-p1" id="products1">
+        <h2>trending collection</h2>
+        <p>summer collection</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="/project/shirt.jpg" alt="" height="150px" width="150px">
+                <div class="des">
+                    <span>spookie</span>
+                    <h5>cartoon astronut shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h6>599rs</h6>
+                    <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="/project/shirt.jpg" alt="" height="150px" width="150px">
+                    <div class="des">
+                        <span>spookie</span>
+                        <h5>cartoon astronut shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h6>599rs</h6>
+                        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                    </div>
+                    <div class="pro">
+                        <img src="/project/shirt.jpg" alt="" height="150px" width="150px">
+                        <div class="des">
+                            <span>spookie</span>
+                            <h5>cartoon astronut shirt</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h6>599rs</h6>
+                            <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                        </div>
+            </div>
+            
+        </div>
+    </section> -->
+    <section class="head">
+        <div id="header1">
+            <h2>Trending collection</h2>
+            <p>
+              summer collection new modern design  
+            </p>
+            <pre>
+
+            </pre>
+        </div>
+    </section>
+    <section id="product">
+        
+        <div id="catalog">
+            <a href="/project/product/sh1.html" target="_blank"> <img src="./cloths/shirt1.webp" alt="" height="150px" width="150px"></a>
+                <h5>Summer shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <a href="/project/product/sh2.html" target="_blank"><img src="./cloths/shirt2.webp" alt="" height="150px" width="150px"></a>
+                <h5>White shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        
+        <div id="catalog">
+            <a href="/project/product/sh3.html" target="_blank"><img src="./cloths/shirt3.jpeg" alt="" height="150px" width="150px"></a>
+                <h5>Beach shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <a href="/project/product/sh4.html" target="_blank"><img src="./cloths/shirt3.webp" alt="" height="150px" width="150px"></a>
+                <h5>Button Up shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <a href="/project/product/sh5.html" target="_blank"><img src="./cloths/shirt4.webp" alt="" height="150px" width="150px"></a>
+                <h5>Crochet shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <a href="/project/product/pnt1.html" target="_blank"><img src="./cloths/pant1.webp" alt="" height="150px" width="150px"></a>
+                <h5>Chinos Pant</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <a href="/project/product/pnt2.html" target="_blank"><img src="./cloths/pant2.webp" alt="" height="150px" width="150px"></a>
+                <h5>Straight Jeans Pant</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <a href="/project/product/pnt3.html" target="_blank"><img src="./cloths/pant3.webp" alt="" height="150px" width="150px"></a>
+                <h5> High-Waist Pants </h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div><div id="catalog">
+            <a href="/project/product/pnt4.html" target="_blank"><img src="./cloths/pant4.webp" alt="" height="150px" width="150px"></a>
+                <h5>Shorts Pant</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <a href="/project/product/pnt5.html" target="_blank"><img src="./cloths/pant5.webp" alt="" height="150px" width="150px"></a>
+                <h5>Loose fit cargos Pant</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        
+        
+    </section>
+
+    <pre>
+
+
+    </pre>
+
+    <section id="banner" class="section-m1">
+        <!-- <h3> Sal<span>e</span>e<span>e</span>e<span>e</span>e<span>e</span>e<span>e</span>e<span>e</span>e<span>e</span>e<span>e</span>e<span>e</span>e</h3> -->
+        <h3> SAL<span>E</span>E<span>E</span>E<span>E</span>E<span>E</span>E<span>E</span>E<span>E</span>E<span>E</span>E<span>E</span>E<span>E</span>E</h3>
+        <h2>upto <span> 85% off</span> on all products</h2>
+        <button>Explore now</button>
+    </section>
+    <pre>
+
+    </pre>
+
+    <section class="head">
+        <div id="header1">
+            <h2>New arrivals</h2>
+        </div>
+    </section>
+    <pre>
+
+    </pre>
+    <section id="product">
+        
+        <div id="catalog">
+            <img src="./cloths/shirt5.webp" alt="" height="150px" width="150px">
+                <h5>Party shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart" onclick="counter()"></i>
+        </div>
+        <div id="catalog">
+            <img src="./cloths/shirt6.webp" alt="" height="150px" width="150px">
+                <h5>Wedding shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <img src="./cloths/shirt7.webp" alt="" height="150px" width="150px">
+                <h5>Perciliner shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <img src="./cloths/shirt8.webp" alt="" height="150px" width="150px">
+                <h5>Resort shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <img src="./cloths/shirt9.webp" alt="" height="150px" width="150px">
+                <h5>Denim shirt</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <img src="./cloths/pant6.webp" alt="" height="150px" width="150px">
+                <h5>568 loose fit jeans</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <img src="./cloths/pant7.webp" alt="" height="150px" width="150px">
+                <h5>501 original jeans</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <img src="./cloths/pant8.webp" alt="" height="150px" width="150px">
+                <h5>511 slim jeans</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div><div id="catalog">
+            <img src="./cloths/pant9.webp" alt="" height="150px" width="150px">
+                <h5>578 baggy jeans</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div id="catalog">
+            <img src="./cloths/pant10.webp" alt="" height="150px" width="150px">
+                <h5>555 relaxed jeans</h5>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>           
+                <h6>599rs</h6>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        
+        
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h6>Crazy deals</h6>
+            <h2>Buy 2 get 2 free</h2>
+            <span>The most trending clothes are on sale</span>
+            <button class="btn">Learn more</button>
+        </div>
+        <div class="banner-box">
+            <h6>Crazy deals</h6>
+            <h2>Buy 2 get 2 free</h2>
+            <span>The most trending clothes are on sale</span>
+            <button class="btn">Learn more</button>
+        </div>
+    </section>
+
+    <section id="banner3" class="section-p1">
+        <div class="banner-box footwear">
+            <h4>season sale</h4>
+            <h3>winter collection 50%off</h3>
+        </div>
+        <div class="banner-box footwear">
+            <h4>new footwear collection</h4>
+            <h3>spring / summer 2025</h3>
+        </div>
+        <div class="banner-box">
+            <h4>t-shirt</h4>
+            <h3>new trendy prints</h3>
+        </div>
+
+
+
+    </section>
+
+    <!-- <footer class="section-p1" id="footer">
+        <div class="col">
+            <img class="logo" src="./pic/Louis-Vuitton-Logo-PNG-Pic.png" alt="" height="90px" width="120px">
+            <h4>Contact</h4>
+            <p><strong>Address :</strong> 1st block rajajinagar  Bengaluru 560010, Karnataka  India</p>
+            <p>
+                <strong>Phone :</strong> +91 1234567890</p>
+            </p>
+            <p><strong>Hours :</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow</h4>
+                <div>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div>
+                <h4>Payment</h4>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-discover"></i>
+            </div>
+            
+            
+        </div>
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="">Delivary Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Condition</a>
+            <a href="">Contact Us</a>
+        </div>
+    
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+        </div>
+    
+        <div class="col install">
+            <h4>Install</h4>
+            <p>from App Store or Google Play store</p>
+            <div>
+                <h4>Payment</h4>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-discover"></i>
+            </div>
+            <div class="row">
+                <img  height="48px" width="130px" src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="copy-right">
+                <p>&copy; 2024, LV. All rights reserved </p>
+    
+            </div>
+            
+    </footer> -->
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for more</h4>
+            <p>Get E-mail updates for our latest shop and <span>special offers..!!!</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your Email address">
+            <button>Sign-up</button>
+        </div>
+    </section>
+
+    <a href="./cart.html">
+        <div class="cartbtn">🛒
+            <!-- <button id="carti">🛒</button> -->
+            <span id="count"></span>
+        </div>
+    </a>
+
+    <footer>
+        <div class="col col1">
+            <img class="logo" src="./project-logo1.PNG" alt="" height="50px" width="100px">
+            <h4>Contact</h4>
+            <p>
+                <strong>Address</strong> MG Road, Church Street, Banglore-560010.
+            </p>
+            <p>
+                <strong>Phone</strong> (+91) 9353861156 / 8722210990       
+            </p>
+            <p>
+                <strong>hours :</strong> 9:00 AM - 9:00 PM, Sun - Sat
+            </p>
+            <div class="follow">
+                <h4>Follow us on</h4>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <!-- <button>b1</button> -->
+        </div>
+
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Contact Us</a>
+            <!-- <button>b2</button> -->
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <a href="">Sign in</a>
+            <a href="">View cart</a>
+            <a href="">Track my order</a>
+            <a href="">Help</a>
+            <!-- <button>b3</button> -->
+        </div>
+        <div class="col install">
+            <h4>Install</h4>
+            <p>from App store or Google play store</p>
+            <div class="row">
+                <img height="40px" width="110px" src="./cloths/playstore.jpeg" alt="">
+                <img height="40px" width="110px" src="./cloths/appstore.jpeg" alt="">
+            </div>
+            <p>Secured payment gateway</p>
+            <img height="90px" width="210px" src="./cloths/secured.jpeg" alt="">
+            <!-- <button>b4</button> -->
+        </div>        
+    </footer>
+    <hr>
+    <div id="copy-right">
+       <p> 0 2025, tech etc - HTML CSS Ecommerce Template</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button onclick="x()">submit
+
+    </button>
+    <script>
+        function x(){
+            let i = document.querySelector('input')
+            let j = i.value
+            console.log(j)
+            window.localStorage.setItem('name',j)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        main,body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            gap:10px;
+            height: 25rem;
+            width: 500px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .imagecontain{
+            flex: 1;
+            height: 150px;
+        }
+        .imagecontain:hover{
+            flex-grow: 5;
+            transition: all 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="imagecontain">
+            <img src="/basics/car1.jpeg" alt="1">
+        </div>
+        <div class="imagecontain">
+            <img src="/basics/car2.jpeg" alt="2">
+        </div>
+        <div class="imagecontain">
+            <img src="/basics/car3.jpeg" alt="3">
+        </div>
+        <div class="imagecontain">
+            <img src="/basics/car4.jpeg" alt="4">
+        </div>
+        <div class="imagecontain">
+            <img src="/basics/car5.jpeg" alt="5">
+        </div>
+    </main>
+</body>
+</html>

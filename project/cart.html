@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="small-container">
+        <table border="5px solid black">
+            <tr>
+                <th>Remove</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        
+        let cart = JSON.parse(localStorage.getItem("cart"))
+        cart.forEach(element => {
+            console.log(element.name)
+            console.log(element.price)
+            console.log(element.quant)
+            let t= document.querySelector("table")
+            let r1 = document.createElement("tr")
+            let td1=document.createElement("td")
+            let td2=document.createElement("td")
+            let td3=document.createElement("td")
+            let td4=document.createElement("td")
+            td1.innerText=element.name
+            td2.innerText=element.price
+            td3.innerText=element.quant
+            td4.innerText=(element.quant * element.price)
+            r1.append(td1,td2,td3,td4)
+            t.append(r1)
+        });
+    </script>
+</body>
+</html>
